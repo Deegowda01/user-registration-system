@@ -1,0 +1,491 @@
+/* =========================================
+   GLOBAL
+   ========================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #f4f6f8;
+
+  color: #222;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.page {
+  width: 100%;
+
+  padding: 30px 0 50px;
+}
+
+
+/* =========================================
+   REGISTRATION CONTAINER
+   ========================================= */
+
+.container {
+  width: 500px;
+
+  margin: 20px auto 40px;
+
+  padding: 30px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.12);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADING
+   ========================================= */
+
+h1 {
+  margin-top: 0;
+
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  font-size: 30px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =========================================
+   LABEL
+   ========================================= */
+
+label {
+  margin-top: 14px;
+
+  margin-bottom: 6px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+}
+
+
+/* =========================================
+   INPUT / SELECT
+   ========================================= */
+
+input,
+select {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 6px;
+
+  background: white;
+
+  font-size: 15px;
+}
+
+
+input:focus,
+select:focus {
+  outline: none;
+
+  border-color: #007bff;
+
+  box-shadow:
+    0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+
+/* =========================================
+   MAIN BUTTON
+   ========================================= */
+
+button {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #007bff;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+button:hover {
+  background: #0056b3;
+}
+
+
+button:disabled {
+  background: #999;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   SUCCESS
+   ========================================= */
+
+.success {
+  margin-top: 20px;
+
+  padding: 12px;
+
+  border-radius: 6px;
+
+  background: #d4edda;
+
+  border: 1px solid #b7dfc1;
+
+  color: #155724;
+
+  text-align: center;
+
+  font-weight: bold;
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error {
+  margin-top: 20px;
+
+  padding: 12px;
+
+  border-radius: 6px;
+
+  background: #f8d7da;
+
+  border: 1px solid #f1b0b7;
+
+  color: #721c24;
+
+  text-align: center;
+
+  font-weight: bold;
+}
+
+
+/* =========================================
+   USERS CONTAINER
+   ========================================= */
+
+.users-container {
+  width: 95%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background: white;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   USERS HEADER
+   ========================================= */
+
+.users-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+
+.users-header h2 {
+  margin: 0;
+
+  font-size: 24px;
+}
+
+
+/* =========================================
+   REFRESH BUTTON
+   ========================================= */
+
+.refresh-button {
+  width: auto;
+
+  margin: 0;
+
+  padding: 9px 18px;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+   ========================================= */
+
+.table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 1000px;
+}
+
+
+/* =========================================
+   TABLE HEADER
+   ========================================= */
+
+th {
+  padding: 12px;
+
+  background: #007bff;
+
+  color: white;
+
+  text-align: left;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TABLE CELLS
+   ========================================= */
+
+td {
+  padding: 11px;
+
+  border-bottom: 1px solid #dddddd;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TABLE ROW
+   ========================================= */
+
+tbody tr:hover {
+  background: #f5f5f5;
+}
+
+
+/* =========================================
+   ACTIVE STATUS
+   ========================================= */
+
+.status-active {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: #d4edda;
+
+  color: #155724;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+
+/* =========================================
+   INACTIVE STATUS
+   ========================================= */
+
+.status-inactive {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: #f8d7da;
+
+  color: #721c24;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+
+/* =========================================
+   TABLE MESSAGE
+   ========================================= */
+
+.table-message {
+  padding: 25px;
+
+  text-align: center;
+
+  color: #666;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
+
+    padding: 20px;
+  }
+
+
+  .users-container {
+    width: 95%;
+
+    padding: 15px;
+  }
+
+
+  .users-header {
+    flex-direction: column;
+
+    gap: 15px;
+
+    align-items: stretch;
+  }
+
+
+  .refresh-button {
+    width: 100%;
+  }
+
+
+  h1 {
+    font-size: 25px;
+  }
+}
+
+/* ========================= */
+/* Cancel Edit Button */
+/* ========================= */
+
+.cancel-button {
+  margin-top: 10px;
+  background: #6c757d;
+}
+
+.cancel-button:hover {
+  background: #545b62;
+}
+
+
+/* ========================= */
+/* Action Buttons */
+/* ========================= */
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+
+/* Edit button */
+
+.edit-button {
+  width: auto;
+  margin: 0;
+  padding: 7px 12px;
+  background: #ffc107;
+  color: #222;
+  font-size: 13px;
+}
+
+.edit-button:hover {
+  background: #e0a800;
+}
+
+
+/* Delete button */
+
+.delete-button {
+  width: auto;
+  margin: 0;
+  padding: 7px 12px;
+  background: #dc3545;
+  color: white;
+  font-size: 13px;
+}
+
+.delete-button:hover {
+  background: #c82333;
+}
+
+.delete-button:disabled {
+  background: #999;
+}
+
+
+/* Make table wider because of Actions column */
+
+table {
+  min-width: 1150px;
+}
